@@ -1,5 +1,8 @@
 import 'package:belajar_bloc/part1/stream.dart';
 import 'package:belajar_bloc/part2/cubit.dart';
+import 'package:belajar_bloc/part3/observer_cubit.dart';
+import 'package:belajar_bloc/part4/pages/home_page.dart';
+import 'package:belajar_bloc/part5/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CubitPart(),
+      home: HomePagePart5(),
     );
   }
 }

@@ -57,6 +57,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
+  elegant_notification:
+    dependency: "direct main"
+    description:
+      name: elegant_notification
+      sha256: "01bac68d082ba55693fb6ab6e15ca787145ccf662173b180c2aabb1879481279"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.8.1"
   fake_async:
     dependency: transitive
     description:
@@ -155,6 +163,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.5"
+  quickalert:
+    dependency: "direct main"
+    description:
+      name: quickalert
+      sha256: "33a52870b2a87c55d0649d0cd228efaa2368d5df39231fdecebb71f349a9b221"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -218,4 +234,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.19.6 <3.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=1.17.0"
