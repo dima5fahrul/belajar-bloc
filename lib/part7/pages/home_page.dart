@@ -1,4 +1,4 @@
-import 'package:belajar_bloc/part4/bloc/counter.dart';
+import 'package:belajar_bloc/bloc/counter.dart';
 import 'package:elegant_notification/elegant_notification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';

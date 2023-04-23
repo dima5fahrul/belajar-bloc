@@ -9,7 +9,7 @@ class IncrementWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final counter = BlocProvider.of<Counter>(context);
+    final counter = context.read<Counter>();
 
     return Material(
       color: Colors.blue,
