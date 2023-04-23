@@ -6,37 +6,41 @@ import 'package:belajar_bloc/part4/pages/home_page.dart';
 import 'package:belajar_bloc/part5/pages/home_page.dart';
 import 'package:belajar_bloc/part7/pages/home_page.dart';
 import 'package:belajar_bloc/part8/pages/home_page.dart';
+import 'package:belajar_bloc/part9/routes/route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  final router = RouterPage();
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // return MaterialApp(
-    //   title: 'Flutter Demo',
-    //   theme: ThemeData(
-    //     primarySwatch: Colors.blue,
-    //   ),
-    //   home: HomePagePart7(),
-    // );
+    // Part 7
     // return BlocProvider(
     //   create: (context) => Counter(),
     //   child: MaterialApp(
     //     home: HomePagePart7(),
     //   ),
     // );
+
+    // Part 8
+    // return MaterialApp(
+    //   home: BlocProvider(
+    //     create: (context) => Counter(),
+    //     child: HomePagePart8(),
+    //   ),
+    // );
+
+    // Part 9
     return MaterialApp(
-      home: BlocProvider(
-        create: (context) => Counter(),
-        child: HomePagePart8(),
-      ),
+      onGenerateRoute: router.onGenerateRoute,
     );
   }
 }
