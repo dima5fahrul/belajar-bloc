@@ -3,6 +3,7 @@ import 'package:belajar_bloc/part10-multi_bloc_provider/pages/app.dart';
 import 'package:belajar_bloc/part10-multi_bloc_provider/pages/home_page.dart';
 import 'package:belajar_bloc/part11-multi_bloc_listener/pages/app.dart';
 import 'package:belajar_bloc/part12-bloc_selector/pages/home_page.dart';
+import 'package:belajar_bloc/part13-extension_method/pages/home_page.dart';
 import 'package:belajar_bloc/part2-basic_cubit/cubit.dart';
 import 'package:belajar_bloc/part3-observer_cubit/observer_cubit.dart';
 import 'package:belajar_bloc/bloc/counter.dart';
@@ -64,24 +65,32 @@ class MyApp extends StatelessWidget {
     // );
 
     // Part 11
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => CounterBloc(),
-        ),
-        BlocProvider(
-          create: (context) => ThemeBloc(),
-        ),
-      ],
-      child: const App11(),
-    );
+    // return MultiBlocProvider(
+    //   providers: [
+    //     BlocProvider(
+    //       create: (context) => CounterBloc(),
+    //     ),
+    //     BlocProvider(
+    //       create: (context) => ThemeBloc(),
+    //     ),
+    //   ],
+    //   child: const App11(),
+    // );
 
     // Part 12
     // return MaterialApp(
     //   home: BlocProvider(
     //     create: (context) => UserBloc(),
-    //     child: const HomePagePart11(),
+    //     child: const HomePagePart12(),
     //   ),
     // );
+
+    // Part 13
+    return MaterialApp(
+      home: BlocProvider(
+        create: (context) => UserBloc(),
+        child: const HomePagePart13(),
+      ),
+    );
   }
 }
