@@ -1,4 +1,6 @@
 import 'package:belajar_bloc/part1/stream.dart';
+import 'package:belajar_bloc/part10/pages/app.dart';
+import 'package:belajar_bloc/part10/pages/home_page.dart';
 import 'package:belajar_bloc/part2/cubit.dart';
 import 'package:belajar_bloc/part3/observer_cubit.dart';
 import 'package:belajar_bloc/bloc/counter.dart';
@@ -9,6 +11,8 @@ import 'package:belajar_bloc/part8/pages/home_page.dart';
 import 'package:belajar_bloc/part9/routes/route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'bloc/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -39,8 +43,21 @@ class MyApp extends StatelessWidget {
     // );
 
     // Part 9
-    return MaterialApp(
-      onGenerateRoute: router.onGenerateRoute,
+    // return MaterialApp(
+    //   onGenerateRoute: router.onGenerateRoute,
+    // );
+
+    // Part 10
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => CounterBloc(),
+        ),
+        BlocProvider(
+          create: (context) => ThemeBloc(),
+        ),
+      ],
+      child: const App(),
     );
   }
 }

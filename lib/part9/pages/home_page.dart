@@ -31,7 +31,7 @@ class HomePagePart9 extends StatelessWidget {
                   },
                   borderRadius: BorderRadius.circular(10),
                   child: const SizedBox(
-                    width: 100,
+                    width: 50,
                     height: 100,
                     child: Icon(
                       Icons.remove,
