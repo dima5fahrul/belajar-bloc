@@ -1,6 +1,6 @@
 import 'package:belajar_bloc/bloc/counter.dart';
-import 'package:belajar_bloc/part9/pages/home_page.dart';
-import 'package:belajar_bloc/part9/pages/other_page.dart';
+import 'package:belajar_bloc/part9-bloc_access/pages/home_page.dart';
+import 'package:belajar_bloc/part9-bloc_access/pages/other_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

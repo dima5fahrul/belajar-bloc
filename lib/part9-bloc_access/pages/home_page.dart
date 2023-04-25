@@ -1,5 +1,5 @@
 import 'package:belajar_bloc/bloc/counter.dart';
-import 'package:belajar_bloc/part8/pages/other_page.dart';
+import 'package:belajar_bloc/part8-bloc_provider_value/pages/other_page.dart';
 import 'package:elegant_notification/elegant_notification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
